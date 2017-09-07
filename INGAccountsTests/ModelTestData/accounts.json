@@ -1,0 +1,44 @@
+{
+  "accounts": [
+    {
+      "accountBalanceInCents": 985000,
+      "accountCurrency": "EUR",
+      "accountId": 748757694,
+      "accountName": "Hr P L G N StellingTD",
+      "accountNumber": "74875754",
+      "accountType": "PAYMENT",
+      "alias": "",
+      "iban": "NL82INGB0074875754",
+      "isVisible": true
+    },
+    {
+      "accountBalanceInCents": 1000000,
+      "accountCurrency": "EUR",
+      "accountId": 700000027559,
+      "accountName": "Second acccount",
+      "accountNumber": "74875773",
+      "accountType": "PAYMENT",
+      "alias": "",
+      "iban": "NL54INGB0074875773",
+      "isVisible": false
+    },
+    {
+      "accountBalanceInCents": 15000,
+      "accountCurrency": "EUR",
+      "accountId": 700000027559,
+      "accountName": "third account",
+      "accountNumber": "H177-27066",
+      "accountType": "SAVING",
+      "alias": "SAVINGS",
+      "iban": "NL40INGB0074862542",
+      "isVisible": true,
+      "linkedAccountId": 748757694,
+      "productName": "OranjeSpaarrekening",
+      "productType": 1000,
+      "savingsTargetReached": 1,
+      "targetAmountInCents": 2000
+    }
+  ],
+  "failedAccountTypes": "CREDITCARDS",
+  "returnCode": "OK"
+}

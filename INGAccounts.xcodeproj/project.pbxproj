@@ -1,0 +1,1406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A7F9ED567950917EE47549E /* Pods_INGAccountWatchExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33B720922C14AA403CC5790 /* Pods_INGAccountWatchExtension.framework */; };
+		550D15D98B74FFC04D268F2C /* Pods_INGAccountsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C27EA44D4A0222FCDF28B0 /* Pods_INGAccountsTests.framework */; };
+		6D1D45C91F608FF000DF5737 /* AccountTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D171F6031AB00456059 /* AccountTableViewCellViewModel.swift */; };
+		6D1D45CA1F60984400DF5737 /* GeometricSlabserif703MediumBT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2C91F5ECFD60013324E /* GeometricSlabserif703MediumBT.ttf */; };
+		6D1D45CB1F60984800DF5737 /* INGMeWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2C51F5ECFB30013324E /* INGMeWeb-Bold.ttf */; };
+		6D1D45CC1F60984B00DF5737 /* INGMeWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2C61F5ECFB30013324E /* INGMeWeb-Regular.ttf */; };
+		6D2E2A0E1F612A55004B5BFC /* PR2Loopable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E2A0D1F612A55004B5BFC /* PR2Loopable.swift */; };
+		6D2E2A0F1F612ABB004B5BFC /* PR2Loopable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E2A0D1F612A55004B5BFC /* PR2Loopable.swift */; };
+		6D2E2A101F612ABC004B5BFC /* PR2Loopable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E2A0D1F612A55004B5BFC /* PR2Loopable.swift */; };
+		6D2E2A111F612ABD004B5BFC /* PR2Loopable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E2A0D1F612A55004B5BFC /* PR2Loopable.swift */; };
+		6D35B2AD1F5EC2AF0013324E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2AC1F5EC2AF0013324E /* AppDelegate.swift */; };
+		6D35B2B11F5EC33F0013324E /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2B01F5EC33F0013324E /* Styles.swift */; };
+		6D35B2B31F5EC3AA0013324E /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2B21F5EC3AA0013324E /* EndPoints.swift */; };
+		6D35B2BD1F5EC9740013324E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2BC1F5EC9740013324E /* Assets.xcassets */; };
+		6D35B2C01F5EC97A0013324E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2BE1F5EC97A0013324E /* LaunchScreen.storyboard */; };
+		6D35B2C31F5EC99A0013324E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2C21F5EC99A0013324E /* Localizable.strings */; };
+		6D35B2C71F5ECFB30013324E /* INGMeWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2C51F5ECFB30013324E /* INGMeWeb-Bold.ttf */; };
+		6D35B2C81F5ECFB30013324E /* INGMeWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2C61F5ECFB30013324E /* INGMeWeb-Regular.ttf */; };
+		6D35B2CA1F5ECFD60013324E /* GeometricSlabserif703MediumBT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2C91F5ECFD60013324E /* GeometricSlabserif703MediumBT.ttf */; };
+		6D35B2CD1F5EDBB00013324E /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2CC1F5EDBB00013324E /* Accounts.swift */; };
+		6D35B2CF1F5F06060013324E /* AccountContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2CE1F5F06060013324E /* AccountContainer.swift */; };
+		6D35B2D51F5F12020013324E /* PR2Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2D21F5F12020013324E /* PR2Common.swift */; };
+		6D35B2D71F5F12020013324E /* PRExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2D41F5F12020013324E /* PRExtensions.swift */; };
+		6D35B2D91F5F195A0013324E /* AccountModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2D81F5F195A0013324E /* AccountModelTests.swift */; };
+		6D35B2DC1F5F1A0B0013324E /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2DB1F5F1A0B0013324E /* accounts.json */; };
+		6D35B2DD1F5F1A510013324E /* PR2Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2D21F5F12020013324E /* PR2Common.swift */; };
+		6D35B2DE1F5F1A530013324E /* PRExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2D41F5F12020013324E /* PRExtensions.swift */; };
+		6D35B2DF1F5F2F6C0013324E /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2DB1F5F1A0B0013324E /* accounts.json */; };
+		6D35B2E01F5F31E90013324E /* AccountContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2CE1F5F06060013324E /* AccountContainer.swift */; };
+		6D35B2E11F5F31EB0013324E /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2CC1F5EDBB00013324E /* Accounts.swift */; };
+		6D35B2E41F5F41050013324E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2E31F5F41050013324E /* AppCoordinator.swift */; };
+		6D35B2E61F5F41C10013324E /* AccountsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2E51F5F41C10013324E /* AccountsCoordinator.swift */; };
+		6D35B2F41F5F59FF0013324E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2F31F5F59FF0013324E /* Constants.swift */; };
+		6D35B2F61F5F6CD10013324E /* AccountsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2F51F5F6CD10013324E /* AccountsViewModelTests.swift */; };
+		6D35B2FF1F5F75F00013324E /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2FE1F5F75F00013324E /* UITableViewExtension.swift */; };
+		6D35B3011F5F76870013324E /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B3001F5F76870013324E /* ReusableView.swift */; };
+		6D855CFD1F5FD11500456059 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855CFC1F5FD11500456059 /* NibLoadableView.swift */; };
+		6D855D061F6025AE00456059 /* PR2Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D051F6025AE00456059 /* PR2Networking.swift */; };
+		6D855D091F6025B500456059 /* PR2NetworkingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D071F6025B500456059 /* PR2NetworkingExtensions.swift */; };
+		6D855D0A1F6025B500456059 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D081F6025B500456059 /* NetworkOperation.swift */; };
+		6D855D0D1F6025CC00456059 /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0B1F6025CC00456059 /* ConcurrentOperation.swift */; };
+		6D855D0E1F6025CC00456059 /* NormalOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0C1F6025CC00456059 /* NormalOperation.swift */; };
+		6D855D101F60262500456059 /* PR2Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0F1F60262500456059 /* PR2Dates.swift */; };
+		6D855D181F6031AB00456059 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D121F6031AB00456059 /* AccountsViewController.swift */; };
+		6D855D191F6031AB00456059 /* AccountsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D855D131F6031AB00456059 /* AccountsViewController.xib */; };
+		6D855D1A1F6031AB00456059 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D141F6031AB00456059 /* AccountsViewModel.swift */; };
+		6D855D1B1F6031AB00456059 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D151F6031AB00456059 /* AccountTableViewCell.swift */; };
+		6D855D1C1F6031AB00456059 /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D855D161F6031AB00456059 /* AccountTableViewCell.xib */; };
+		6D855D1D1F6031AB00456059 /* AccountTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D171F6031AB00456059 /* AccountTableViewCellViewModel.swift */; };
+		6D855D1E1F60325700456059 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D141F6031AB00456059 /* AccountsViewModel.swift */; };
+		6D855D1F1F6032C000456059 /* PR2NetworkingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D071F6025B500456059 /* PR2NetworkingExtensions.swift */; };
+		6D855D201F60330F00456059 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2B21F5EC3AA0013324E /* EndPoints.swift */; };
+		6D855D211F60331800456059 /* PR2Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D051F6025AE00456059 /* PR2Networking.swift */; };
+		6D855D221F60332D00456059 /* AccountTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D171F6031AB00456059 /* AccountTableViewCellViewModel.swift */; };
+		6D855D231F60333C00456059 /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0B1F6025CC00456059 /* ConcurrentOperation.swift */; };
+		6D855D241F6033FE00456059 /* PR2Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0F1F60262500456059 /* PR2Dates.swift */; };
+		6D855D251F60341700456059 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2B01F5EC33F0013324E /* Styles.swift */; };
+		6DE78C8A1F6052410022D186 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2FE1F5F75F00013324E /* UITableViewExtension.swift */; };
+		6DE78C8B1F60524F0022D186 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B3001F5F76870013324E /* ReusableView.swift */; };
+		6DE78C8C1F6052520022D186 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855CFC1F5FD11500456059 /* NibLoadableView.swift */; };
+		6DE78C8D1F6053840022D186 /* GeometricSlabserif703MediumBT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2C91F5ECFD60013324E /* GeometricSlabserif703MediumBT.ttf */; };
+		6DE78C8E1F6053870022D186 /* INGMeWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2C51F5ECFB30013324E /* INGMeWeb-Bold.ttf */; };
+		6DE78C8F1F60538A0022D186 /* INGMeWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D35B2C61F5ECFB30013324E /* INGMeWeb-Regular.ttf */; };
+		6DE78C981F6082460022D186 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE78C961F6082460022D186 /* Interface.storyboard */; };
+		6DE78C9A1F6082460022D186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE78C991F6082460022D186 /* Assets.xcassets */; };
+		6DE78CA11F6082460022D186 /* INGAccountWatchExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6DE78CA01F6082460022D186 /* INGAccountWatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DE78CA81F6082460022D186 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE78CA71F6082460022D186 /* ExtensionDelegate.swift */; };
+		6DE78CAA1F6082460022D186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE78CA91F6082460022D186 /* Assets.xcassets */; };
+		6DE78CAE1F6082460022D186 /* INGAccountWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6DE78C941F6082460022D186 /* INGAccountWatch.app */; };
+		6DE78CBA1F6089CF0022D186 /* AccountsTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE78CB91F6089CF0022D186 /* AccountsTableRowController.swift */; };
+		6DE78CBC1F608A7C0022D186 /* AccountsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE78CBB1F608A7C0022D186 /* AccountsInterfaceController.swift */; };
+		6DE78CBD1F608C910022D186 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D141F6031AB00456059 /* AccountsViewModel.swift */; };
+		6DE78CBE1F608CA00022D186 /* AccountContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2CE1F5F06060013324E /* AccountContainer.swift */; };
+		6DE78CBF1F608CA30022D186 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2CC1F5EDBB00013324E /* Accounts.swift */; };
+		6DE78CC01F608CB70022D186 /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0B1F6025CC00456059 /* ConcurrentOperation.swift */; };
+		6DE78CC11F608CB90022D186 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D081F6025B500456059 /* NetworkOperation.swift */; };
+		6DE78CC21F608CC00022D186 /* NormalOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0C1F6025CC00456059 /* NormalOperation.swift */; };
+		6DE78CC31F608CC30022D186 /* PR2Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2D21F5F12020013324E /* PR2Common.swift */; };
+		6DE78CC41F608CC60022D186 /* PR2Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0F1F60262500456059 /* PR2Dates.swift */; };
+		6DE78CC51F608CC90022D186 /* PR2Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D051F6025AE00456059 /* PR2Networking.swift */; };
+		6DE78CC61F608CCC0022D186 /* PR2NetworkingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D071F6025B500456059 /* PR2NetworkingExtensions.swift */; };
+		6DE78CC71F608CD30022D186 /* PRExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2D41F5F12020013324E /* PRExtensions.swift */; };
+		6DE78CC81F608CEB0022D186 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2F31F5F59FF0013324E /* Constants.swift */; };
+		6DE78CC91F608CEE0022D186 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2B21F5EC3AA0013324E /* EndPoints.swift */; };
+		6DE78CCA1F608CF20022D186 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2B01F5EC33F0013324E /* Styles.swift */; };
+		6DF4A4FD1F604B4D0015A477 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF4A4FC1F604B4D0015A477 /* NotificationCenter.framework */; };
+		6DF4A5001F604B4D0015A477 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF4A4FF1F604B4D0015A477 /* TodayViewController.swift */; };
+		6DF4A5031F604B4D0015A477 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF4A5011F604B4D0015A477 /* MainInterface.storyboard */; };
+		6DF4A5071F604B4D0015A477 /* INGAccountsToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6DF4A4FB1F604B4D0015A477 /* INGAccountsToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DF4A50C1F604B920015A477 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D141F6031AB00456059 /* AccountsViewModel.swift */; };
+		6DF4A50D1F604B960015A477 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D151F6031AB00456059 /* AccountTableViewCell.swift */; };
+		6DF4A50E1F604B9B0015A477 /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D855D161F6031AB00456059 /* AccountTableViewCell.xib */; };
+		6DF4A50F1F604B9E0015A477 /* AccountTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D171F6031AB00456059 /* AccountTableViewCellViewModel.swift */; };
+		6DF4A5101F604BA20015A477 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2F31F5F59FF0013324E /* Constants.swift */; };
+		6DF4A5111F604BA60015A477 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2B21F5EC3AA0013324E /* EndPoints.swift */; };
+		6DF4A5121F604BA90015A477 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2B01F5EC33F0013324E /* Styles.swift */; };
+		6DF4A5131F604BB60015A477 /* AccountContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2CE1F5F06060013324E /* AccountContainer.swift */; };
+		6DF4A5141F604BB90015A477 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2CC1F5EDBB00013324E /* Accounts.swift */; };
+		6DF4A5151F604BC60015A477 /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0B1F6025CC00456059 /* ConcurrentOperation.swift */; };
+		6DF4A5161F604BC90015A477 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D081F6025B500456059 /* NetworkOperation.swift */; };
+		6DF4A5171F604BCE0015A477 /* NormalOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0C1F6025CC00456059 /* NormalOperation.swift */; };
+		6DF4A5181F604BD10015A477 /* PR2Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2D21F5F12020013324E /* PR2Common.swift */; };
+		6DF4A5191F604BD40015A477 /* PR2Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0F1F60262500456059 /* PR2Dates.swift */; };
+		6DF4A51A1F604BD80015A477 /* PR2Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D051F6025AE00456059 /* PR2Networking.swift */; };
+		6DF4A51B1F604BDC0015A477 /* PR2NetworkingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D071F6025B500456059 /* PR2NetworkingExtensions.swift */; };
+		6DF4A51C1F604BDE0015A477 /* PRExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2D41F5F12020013324E /* PRExtensions.swift */; };
+		A2C102EC884D6CAA0789CF18 /* Pods_INGAccountsToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018A268C20C76E5C4E09D5A9 /* Pods_INGAccountsToday.framework */; };
+		BB31811DA7E3F0A5B69311CD /* Pods_INGAccounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF94A7EA07BFECFEB3A2F916 /* Pods_INGAccounts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D35B29D1F5EC1680013324E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D35B2801F5EC1670013324E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D35B2871F5EC1670013324E;
+			remoteInfo = INGAccounts;
+		};
+		6DE78CA21F6082460022D186 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D35B2801F5EC1670013324E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DE78C9F1F6082460022D186;
+			remoteInfo = "INGAccountWatch Extension";
+		};
+		6DE78CAC1F6082460022D186 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D35B2801F5EC1670013324E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DE78C931F6082460022D186;
+			remoteInfo = INGAccountWatch;
+		};
+		6DF4A5051F604B4D0015A477 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D35B2801F5EC1670013324E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DF4A4FA1F604B4D0015A477;
+			remoteInfo = INGAccountsToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DE78CB41F6082460022D186 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6DE78CA11F6082460022D186 /* INGAccountWatchExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE78CB61F6082460022D186 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6DE78CAE1F6082460022D186 /* INGAccountWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF4A50B1F604B4D0015A477 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6DF4A5071F604B4D0015A477 /* INGAccountsToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		018A268C20C76E5C4E09D5A9 /* Pods_INGAccountsToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGAccountsToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DCF699C37278795DDD41ED /* Pods-INGAccountsToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGAccountsToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGAccountsToday/Pods-INGAccountsToday.debug.xcconfig"; sourceTree = "<group>"; };
+		26127F7C488A0D107015498B /* Pods-INGAccountsToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGAccountsToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGAccountsToday/Pods-INGAccountsToday.release.xcconfig"; sourceTree = "<group>"; };
+		37187A9C604DBFE71FDC10A0 /* Pods-INGAccountWatchExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGAccountWatchExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGAccountWatchExtension/Pods-INGAccountWatchExtension.release.xcconfig"; sourceTree = "<group>"; };
+		502C5819D8E89A6F222F8B8F /* Pods-INGAccountWatchExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGAccountWatchExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGAccountWatchExtension/Pods-INGAccountWatchExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		564124FE2DAFF1529DE5E929 /* Pods-INGAccountsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGAccountsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGAccountsTests/Pods-INGAccountsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D2E2A0D1F612A55004B5BFC /* PR2Loopable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PR2Loopable.swift; sourceTree = "<group>"; };
+		6D35B2881F5EC1670013324E /* INGAccounts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INGAccounts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D35B29C1F5EC1680013324E /* INGAccountsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INGAccountsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D35B2A21F5EC1680013324E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D35B2AC1F5EC2AF0013324E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D35B2AE1F5EC2DB0013324E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D35B2B01F5EC33F0013324E /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		6D35B2B21F5EC3AA0013324E /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		6D35B2BC1F5EC9740013324E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D35B2BE1F5EC97A0013324E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D35B2C21F5EC99A0013324E /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		6D35B2C51F5ECFB30013324E /* INGMeWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "INGMeWeb-Bold.ttf"; sourceTree = "<group>"; };
+		6D35B2C61F5ECFB30013324E /* INGMeWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "INGMeWeb-Regular.ttf"; sourceTree = "<group>"; };
+		6D35B2C91F5ECFD60013324E /* GeometricSlabserif703MediumBT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GeometricSlabserif703MediumBT.ttf; sourceTree = "<group>"; };
+		6D35B2CC1F5EDBB00013324E /* Accounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		6D35B2CE1F5F06060013324E /* AccountContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountContainer.swift; sourceTree = "<group>"; };
+		6D35B2D21F5F12020013324E /* PR2Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PR2Common.swift; sourceTree = "<group>"; };
+		6D35B2D41F5F12020013324E /* PRExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRExtensions.swift; sourceTree = "<group>"; };
+		6D35B2D81F5F195A0013324E /* AccountModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModelTests.swift; sourceTree = "<group>"; };
+		6D35B2DB1F5F1A0B0013324E /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
+		6D35B2E31F5F41050013324E /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6D35B2E51F5F41C10013324E /* AccountsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsCoordinator.swift; sourceTree = "<group>"; };
+		6D35B2F31F5F59FF0013324E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6D35B2F51F5F6CD10013324E /* AccountsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewModelTests.swift; sourceTree = "<group>"; };
+		6D35B2FE1F5F75F00013324E /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		6D35B3001F5F76870013324E /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		6D855CFC1F5FD11500456059 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		6D855D051F6025AE00456059 /* PR2Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PR2Networking.swift; sourceTree = "<group>"; };
+		6D855D071F6025B500456059 /* PR2NetworkingExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PR2NetworkingExtensions.swift; sourceTree = "<group>"; };
+		6D855D081F6025B500456059 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		6D855D0B1F6025CC00456059 /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperation.swift; sourceTree = "<group>"; };
+		6D855D0C1F6025CC00456059 /* NormalOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalOperation.swift; sourceTree = "<group>"; };
+		6D855D0F1F60262500456059 /* PR2Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PR2Dates.swift; sourceTree = "<group>"; };
+		6D855D121F6031AB00456059 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		6D855D131F6031AB00456059 /* AccountsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountsViewController.xib; sourceTree = "<group>"; };
+		6D855D141F6031AB00456059 /* AccountsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
+		6D855D151F6031AB00456059 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		6D855D161F6031AB00456059 /* AccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
+		6D855D171F6031AB00456059 /* AccountTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		6DE78C941F6082460022D186 /* INGAccountWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INGAccountWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE78C971F6082460022D186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6DE78C991F6082460022D186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DE78C9B1F6082460022D186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DE78CA01F6082460022D186 /* INGAccountWatchExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = INGAccountWatchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE78CA71F6082460022D186 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6DE78CA91F6082460022D186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DE78CAB1F6082460022D186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DE78CB91F6089CF0022D186 /* AccountsTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTableRowController.swift; sourceTree = "<group>"; };
+		6DE78CBB1F608A7C0022D186 /* AccountsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsInterfaceController.swift; sourceTree = "<group>"; };
+		6DF4A4FB1F604B4D0015A477 /* INGAccountsToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = INGAccountsToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF4A4FC1F604B4D0015A477 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6DF4A4FF1F604B4D0015A477 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		6DF4A5021F604B4D0015A477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6DF4A5041F604B4D0015A477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FD2D16F65975571CD8681C8 /* Pods-INGAccounts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGAccounts.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGAccounts/Pods-INGAccounts.release.xcconfig"; sourceTree = "<group>"; };
+		79A5E959B2E0F8E33C0ED6A0 /* Pods-INGAccountsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGAccountsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGAccountsTests/Pods-INGAccountsTests.release.xcconfig"; sourceTree = "<group>"; };
+		B33B720922C14AA403CC5790 /* Pods_INGAccountWatchExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGAccountWatchExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB91BCC508ED3B8FBC02B278 /* Pods-INGAccounts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGAccounts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGAccounts/Pods-INGAccounts.debug.xcconfig"; sourceTree = "<group>"; };
+		EF94A7EA07BFECFEB3A2F916 /* Pods_INGAccounts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGAccounts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C27EA44D4A0222FCDF28B0 /* Pods_INGAccountsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGAccountsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30B550D033CDF9B44691CD9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D35B2851F5EC1670013324E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB31811DA7E3F0A5B69311CD /* Pods_INGAccounts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D35B2991F5EC1680013324E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550D15D98B74FFC04D268F2C /* Pods_INGAccountsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE78C9D1F6082460022D186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7F9ED567950917EE47549E /* Pods_INGAccountWatchExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF4A4F81F604B4D0015A477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF4A4FD1F604B4D0015A477 /* NotificationCenter.framework in Frameworks */,
+				A2C102EC884D6CAA0789CF18 /* Pods_INGAccountsToday.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D35B27F1F5EC1670013324E = {
+			isa = PBXGroup;
+			children = (
+				6D35B28A1F5EC1670013324E /* INGAccounts */,
+				6D35B29F1F5EC1680013324E /* INGAccountsTests */,
+				6DF4A4FE1F604B4D0015A477 /* INGAccountsToday */,
+				6DE78C951F6082460022D186 /* INGAccountWatch */,
+				6DE78CA41F6082460022D186 /* INGAccountWatch Extension */,
+				6D35B2891F5EC1670013324E /* Products */,
+				9AD121F36857BBD9888F48DA /* Pods */,
+				B73225889E43F6351B2646BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D35B2891F5EC1670013324E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2881F5EC1670013324E /* INGAccounts.app */,
+				6D35B29C1F5EC1680013324E /* INGAccountsTests.xctest */,
+				6DF4A4FB1F604B4D0015A477 /* INGAccountsToday.appex */,
+				6DE78C941F6082460022D186 /* INGAccountWatch.app */,
+				6DE78CA01F6082460022D186 /* INGAccountWatchExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D35B28A1F5EC1670013324E /* INGAccounts */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2AB1F5EC2AF0013324E /* Application */,
+				6D35B2E21F5F40ED0013324E /* Coordinators */,
+				6D35B2B51F5EC8D40013324E /* Controllers */,
+				6D35B2CB1F5EDB9A0013324E /* Model */,
+				6D35B2B81F5EC9450013324E /* Resources */,
+				6D35B2D11F5F12020013324E /* PR2Studio */,
+			);
+			path = INGAccounts;
+			sourceTree = "<group>";
+		};
+		6D35B29F1F5EC1680013324E /* INGAccountsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2DA1F5F1A0B0013324E /* ModelTestData */,
+				6D35B2D81F5F195A0013324E /* AccountModelTests.swift */,
+				6D35B2F51F5F6CD10013324E /* AccountsViewModelTests.swift */,
+				6D35B2A21F5EC1680013324E /* Info.plist */,
+			);
+			path = INGAccountsTests;
+			sourceTree = "<group>";
+		};
+		6D35B2AB1F5EC2AF0013324E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2AC1F5EC2AF0013324E /* AppDelegate.swift */,
+				6D35B2F31F5F59FF0013324E /* Constants.swift */,
+				6D35B2B21F5EC3AA0013324E /* EndPoints.swift */,
+				6D35B2B01F5EC33F0013324E /* Styles.swift */,
+				6D35B2AE1F5EC2DB0013324E /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6D35B2B51F5EC8D40013324E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D855D111F6031AB00456059 /* Accounts */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6D35B2B81F5EC9450013324E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2C41F5ECFB30013324E /* Fonts */,
+				6D35B2B91F5EC9450013324E /* Images */,
+				6D35B2BA1F5EC9450013324E /* Storyboards */,
+				6D35B2BB1F5EC9450013324E /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D35B2B91F5EC9450013324E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2BC1F5EC9740013324E /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6D35B2BA1F5EC9450013324E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2BE1F5EC97A0013324E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6D35B2BB1F5EC9450013324E /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2C21F5EC99A0013324E /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		6D35B2C41F5ECFB30013324E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2C91F5ECFD60013324E /* GeometricSlabserif703MediumBT.ttf */,
+				6D35B2C51F5ECFB30013324E /* INGMeWeb-Bold.ttf */,
+				6D35B2C61F5ECFB30013324E /* INGMeWeb-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6D35B2CB1F5EDB9A0013324E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2CE1F5F06060013324E /* AccountContainer.swift */,
+				6D35B2CC1F5EDBB00013324E /* Accounts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D35B2D11F5F12020013324E /* PR2Studio */ = {
+			isa = PBXGroup;
+			children = (
+				6D855D0B1F6025CC00456059 /* ConcurrentOperation.swift */,
+				6D855D081F6025B500456059 /* NetworkOperation.swift */,
+				6D855CFC1F5FD11500456059 /* NibLoadableView.swift */,
+				6D855D0C1F6025CC00456059 /* NormalOperation.swift */,
+				6D35B2D21F5F12020013324E /* PR2Common.swift */,
+				6D855D0F1F60262500456059 /* PR2Dates.swift */,
+				6D2E2A0D1F612A55004B5BFC /* PR2Loopable.swift */,
+				6D855D051F6025AE00456059 /* PR2Networking.swift */,
+				6D855D071F6025B500456059 /* PR2NetworkingExtensions.swift */,
+				6D35B2D41F5F12020013324E /* PRExtensions.swift */,
+				6D35B3001F5F76870013324E /* ReusableView.swift */,
+				6D35B2FE1F5F75F00013324E /* UITableViewExtension.swift */,
+			);
+			path = PR2Studio;
+			sourceTree = "<group>";
+		};
+		6D35B2DA1F5F1A0B0013324E /* ModelTestData */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2DB1F5F1A0B0013324E /* accounts.json */,
+			);
+			path = ModelTestData;
+			sourceTree = "<group>";
+		};
+		6D35B2E21F5F40ED0013324E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6D35B2E31F5F41050013324E /* AppCoordinator.swift */,
+				6D35B2E51F5F41C10013324E /* AccountsCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6D855D111F6031AB00456059 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				6D855D121F6031AB00456059 /* AccountsViewController.swift */,
+				6D855D131F6031AB00456059 /* AccountsViewController.xib */,
+				6D855D141F6031AB00456059 /* AccountsViewModel.swift */,
+				6D855D151F6031AB00456059 /* AccountTableViewCell.swift */,
+				6D855D161F6031AB00456059 /* AccountTableViewCell.xib */,
+				6D855D171F6031AB00456059 /* AccountTableViewCellViewModel.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		6DE78C951F6082460022D186 /* INGAccountWatch */ = {
+			isa = PBXGroup;
+			children = (
+				6DE78C961F6082460022D186 /* Interface.storyboard */,
+				6DE78C991F6082460022D186 /* Assets.xcassets */,
+				6DE78C9B1F6082460022D186 /* Info.plist */,
+			);
+			path = INGAccountWatch;
+			sourceTree = "<group>";
+		};
+		6DE78CA41F6082460022D186 /* INGAccountWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6DE78CBB1F608A7C0022D186 /* AccountsInterfaceController.swift */,
+				6DE78CB91F6089CF0022D186 /* AccountsTableRowController.swift */,
+				6DE78CA71F6082460022D186 /* ExtensionDelegate.swift */,
+				6DE78CA91F6082460022D186 /* Assets.xcassets */,
+				6DE78CAB1F6082460022D186 /* Info.plist */,
+			);
+			path = "INGAccountWatch Extension";
+			sourceTree = "<group>";
+		};
+		6DF4A4FE1F604B4D0015A477 /* INGAccountsToday */ = {
+			isa = PBXGroup;
+			children = (
+				6DF4A4FF1F604B4D0015A477 /* TodayViewController.swift */,
+				6DF4A5011F604B4D0015A477 /* MainInterface.storyboard */,
+				6DF4A5041F604B4D0015A477 /* Info.plist */,
+			);
+			path = INGAccountsToday;
+			sourceTree = "<group>";
+		};
+		9AD121F36857BBD9888F48DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB91BCC508ED3B8FBC02B278 /* Pods-INGAccounts.debug.xcconfig */,
+				6FD2D16F65975571CD8681C8 /* Pods-INGAccounts.release.xcconfig */,
+				564124FE2DAFF1529DE5E929 /* Pods-INGAccountsTests.debug.xcconfig */,
+				79A5E959B2E0F8E33C0ED6A0 /* Pods-INGAccountsTests.release.xcconfig */,
+				02DCF699C37278795DDD41ED /* Pods-INGAccountsToday.debug.xcconfig */,
+				26127F7C488A0D107015498B /* Pods-INGAccountsToday.release.xcconfig */,
+				502C5819D8E89A6F222F8B8F /* Pods-INGAccountWatchExtension.debug.xcconfig */,
+				37187A9C604DBFE71FDC10A0 /* Pods-INGAccountWatchExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B73225889E43F6351B2646BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF94A7EA07BFECFEB3A2F916 /* Pods_INGAccounts.framework */,
+				F1C27EA44D4A0222FCDF28B0 /* Pods_INGAccountsTests.framework */,
+				6DF4A4FC1F604B4D0015A477 /* NotificationCenter.framework */,
+				018A268C20C76E5C4E09D5A9 /* Pods_INGAccountsToday.framework */,
+				B33B720922C14AA403CC5790 /* Pods_INGAccountWatchExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D35B2871F5EC1670013324E /* INGAccounts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D35B2A51F5EC1680013324E /* Build configuration list for PBXNativeTarget "INGAccounts" */;
+			buildPhases = (
+				78D451ABE8E55A4B66216333 /* [CP] Check Pods Manifest.lock */,
+				6D35B2841F5EC1670013324E /* Sources */,
+				6D35B2851F5EC1670013324E /* Frameworks */,
+				6D35B2861F5EC1670013324E /* Resources */,
+				0E0C9B7BB33542F819C853F9 /* [CP] Embed Pods Frameworks */,
+				95AED00A84660CCFF07881ED /* [CP] Copy Pods Resources */,
+				6D35B2B41F5EC6FF0013324E /* ShellScript */,
+				6DF4A50B1F604B4D0015A477 /* Embed App Extensions */,
+				6DE78CB61F6082460022D186 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DF4A5061F604B4D0015A477 /* PBXTargetDependency */,
+				6DE78CAD1F6082460022D186 /* PBXTargetDependency */,
+			);
+			name = INGAccounts;
+			productName = INGAccounts;
+			productReference = 6D35B2881F5EC1670013324E /* INGAccounts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D35B29B1F5EC1680013324E /* INGAccountsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D35B2A81F5EC1680013324E /* Build configuration list for PBXNativeTarget "INGAccountsTests" */;
+			buildPhases = (
+				6B7CE0CA7144540EA901E055 /* [CP] Check Pods Manifest.lock */,
+				6D35B2981F5EC1680013324E /* Sources */,
+				6D35B2991F5EC1680013324E /* Frameworks */,
+				6D35B29A1F5EC1680013324E /* Resources */,
+				A1A76B765939004A8B0BC36D /* [CP] Embed Pods Frameworks */,
+				CB30FA17CAD818F6061C0B31 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D35B29E1F5EC1680013324E /* PBXTargetDependency */,
+			);
+			name = INGAccountsTests;
+			productName = INGAccountsTests;
+			productReference = 6D35B29C1F5EC1680013324E /* INGAccountsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DE78C931F6082460022D186 /* INGAccountWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE78CB51F6082460022D186 /* Build configuration list for PBXNativeTarget "INGAccountWatch" */;
+			buildPhases = (
+				6DE78C921F6082460022D186 /* Resources */,
+				6DE78CB41F6082460022D186 /* Embed App Extensions */,
+				30B550D033CDF9B44691CD9C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DE78CA31F6082460022D186 /* PBXTargetDependency */,
+			);
+			name = INGAccountWatch;
+			productName = INGAccountWatch;
+			productReference = 6DE78C941F6082460022D186 /* INGAccountWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6DE78C9F1F6082460022D186 /* INGAccountWatchExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE78CB31F6082460022D186 /* Build configuration list for PBXNativeTarget "INGAccountWatchExtension" */;
+			buildPhases = (
+				29DC9B628FF003E484A98510 /* [CP] Check Pods Manifest.lock */,
+				6DE78C9C1F6082460022D186 /* Sources */,
+				6DE78C9D1F6082460022D186 /* Frameworks */,
+				6DE78C9E1F6082460022D186 /* Resources */,
+				C4B22AF780257553D75BC225 /* [CP] Embed Pods Frameworks */,
+				FAED99818F94F6300DB674F4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = INGAccountWatchExtension;
+			productName = "INGAccountWatch Extension";
+			productReference = 6DE78CA01F6082460022D186 /* INGAccountWatchExtension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		6DF4A4FA1F604B4D0015A477 /* INGAccountsToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF4A50A1F604B4D0015A477 /* Build configuration list for PBXNativeTarget "INGAccountsToday" */;
+			buildPhases = (
+				C20C511401223F373CF1B17F /* [CP] Check Pods Manifest.lock */,
+				6DF4A4F71F604B4D0015A477 /* Sources */,
+				6DF4A4F81F604B4D0015A477 /* Frameworks */,
+				6DF4A4F91F604B4D0015A477 /* Resources */,
+				EA9031CBBF40A965CDA2EE64 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = INGAccountsToday;
+			productName = INGAccountsToday;
+			productReference = 6DF4A4FB1F604B4D0015A477 /* INGAccountsToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D35B2801F5EC1670013324E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = PR2Studio;
+				TargetAttributes = {
+					6D35B2871F5EC1670013324E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5KCE3C36M8;
+						ProvisioningStyle = Automatic;
+					};
+					6D35B29B1F5EC1680013324E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2V49883M46;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6D35B2871F5EC1670013324E;
+					};
+					6DE78C931F6082460022D186 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5KCE3C36M8;
+						ProvisioningStyle = Automatic;
+					};
+					6DE78C9F1F6082460022D186 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2V49883M46;
+						ProvisioningStyle = Automatic;
+					};
+					6DF4A4FA1F604B4D0015A477 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5KCE3C36M8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6D35B2831F5EC1670013324E /* Build configuration list for PBXProject "INGAccounts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D35B27F1F5EC1670013324E;
+			productRefGroup = 6D35B2891F5EC1670013324E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D35B2871F5EC1670013324E /* INGAccounts */,
+				6D35B29B1F5EC1680013324E /* INGAccountsTests */,
+				6DF4A4FA1F604B4D0015A477 /* INGAccountsToday */,
+				6DE78C931F6082460022D186 /* INGAccountWatch */,
+				6DE78C9F1F6082460022D186 /* INGAccountWatchExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D35B2861F5EC1670013324E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D35B2C81F5ECFB30013324E /* INGMeWeb-Regular.ttf in Resources */,
+				6D855D1C1F6031AB00456059 /* AccountTableViewCell.xib in Resources */,
+				6D35B2C31F5EC99A0013324E /* Localizable.strings in Resources */,
+				6D855D191F6031AB00456059 /* AccountsViewController.xib in Resources */,
+				6D35B2BD1F5EC9740013324E /* Assets.xcassets in Resources */,
+				6D35B2C01F5EC97A0013324E /* LaunchScreen.storyboard in Resources */,
+				6D35B2DF1F5F2F6C0013324E /* accounts.json in Resources */,
+				6D35B2CA1F5ECFD60013324E /* GeometricSlabserif703MediumBT.ttf in Resources */,
+				6D35B2C71F5ECFB30013324E /* INGMeWeb-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D35B29A1F5EC1680013324E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D35B2DC1F5F1A0B0013324E /* accounts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE78C921F6082460022D186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE78C9A1F6082460022D186 /* Assets.xcassets in Resources */,
+				6DE78C981F6082460022D186 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE78C9E1F6082460022D186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D1D45CA1F60984400DF5737 /* GeometricSlabserif703MediumBT.ttf in Resources */,
+				6D1D45CC1F60984B00DF5737 /* INGMeWeb-Regular.ttf in Resources */,
+				6D1D45CB1F60984800DF5737 /* INGMeWeb-Bold.ttf in Resources */,
+				6DE78CAA1F6082460022D186 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF4A4F91F604B4D0015A477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE78C8F1F60538A0022D186 /* INGMeWeb-Regular.ttf in Resources */,
+				6DE78C8D1F6053840022D186 /* GeometricSlabserif703MediumBT.ttf in Resources */,
+				6DE78C8E1F6053870022D186 /* INGMeWeb-Bold.ttf in Resources */,
+				6DF4A5031F604B4D0015A477 /* MainInterface.storyboard in Resources */,
+				6DF4A50E1F604B9B0015A477 /* AccountTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E0C9B7BB33542F819C853F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGAccounts/Pods-INGAccounts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29DC9B628FF003E484A98510 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7CE0CA7144540EA901E055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D35B2B41F5EC6FF0013324E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${PODS_ROOT}/SwiftLint/swiftlint";
+		};
+		78D451ABE8E55A4B66216333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95AED00A84660CCFF07881ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGAccounts/Pods-INGAccounts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1A76B765939004A8B0BC36D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGAccountsTests/Pods-INGAccountsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20C511401223F373CF1B17F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4B22AF780257553D75BC225 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGAccountWatchExtension/Pods-INGAccountWatchExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB30FA17CAD818F6061C0B31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGAccountsTests/Pods-INGAccountsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA9031CBBF40A965CDA2EE64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGAccountsToday/Pods-INGAccountsToday-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAED99818F94F6300DB674F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGAccountWatchExtension/Pods-INGAccountWatchExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D35B2841F5EC1670013324E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D35B2D51F5F12020013324E /* PR2Common.swift in Sources */,
+				6D855D0E1F6025CC00456059 /* NormalOperation.swift in Sources */,
+				6D855D181F6031AB00456059 /* AccountsViewController.swift in Sources */,
+				6D35B2D71F5F12020013324E /* PRExtensions.swift in Sources */,
+				6D35B2AD1F5EC2AF0013324E /* AppDelegate.swift in Sources */,
+				6D855D1B1F6031AB00456059 /* AccountTableViewCell.swift in Sources */,
+				6D35B2CD1F5EDBB00013324E /* Accounts.swift in Sources */,
+				6D35B3011F5F76870013324E /* ReusableView.swift in Sources */,
+				6D855D1D1F6031AB00456059 /* AccountTableViewCellViewModel.swift in Sources */,
+				6D35B2CF1F5F06060013324E /* AccountContainer.swift in Sources */,
+				6D855CFD1F5FD11500456059 /* NibLoadableView.swift in Sources */,
+				6D855D101F60262500456059 /* PR2Dates.swift in Sources */,
+				6D855D0D1F6025CC00456059 /* ConcurrentOperation.swift in Sources */,
+				6D855D091F6025B500456059 /* PR2NetworkingExtensions.swift in Sources */,
+				6D2E2A0E1F612A55004B5BFC /* PR2Loopable.swift in Sources */,
+				6D35B2FF1F5F75F00013324E /* UITableViewExtension.swift in Sources */,
+				6D855D0A1F6025B500456059 /* NetworkOperation.swift in Sources */,
+				6D35B2E41F5F41050013324E /* AppCoordinator.swift in Sources */,
+				6D35B2B11F5EC33F0013324E /* Styles.swift in Sources */,
+				6D35B2E61F5F41C10013324E /* AccountsCoordinator.swift in Sources */,
+				6D35B2B31F5EC3AA0013324E /* EndPoints.swift in Sources */,
+				6D855D061F6025AE00456059 /* PR2Networking.swift in Sources */,
+				6D855D1A1F6031AB00456059 /* AccountsViewModel.swift in Sources */,
+				6D35B2F41F5F59FF0013324E /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D35B2981F5EC1680013324E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D855D211F60331800456059 /* PR2Networking.swift in Sources */,
+				6D35B2F61F5F6CD10013324E /* AccountsViewModelTests.swift in Sources */,
+				6D855D231F60333C00456059 /* ConcurrentOperation.swift in Sources */,
+				6D35B2E01F5F31E90013324E /* AccountContainer.swift in Sources */,
+				6D855D1F1F6032C000456059 /* PR2NetworkingExtensions.swift in Sources */,
+				6D855D251F60341700456059 /* Styles.swift in Sources */,
+				6D35B2D91F5F195A0013324E /* AccountModelTests.swift in Sources */,
+				6D35B2DD1F5F1A510013324E /* PR2Common.swift in Sources */,
+				6D855D241F6033FE00456059 /* PR2Dates.swift in Sources */,
+				6D855D201F60330F00456059 /* EndPoints.swift in Sources */,
+				6D35B2DE1F5F1A530013324E /* PRExtensions.swift in Sources */,
+				6D855D1E1F60325700456059 /* AccountsViewModel.swift in Sources */,
+				6D855D221F60332D00456059 /* AccountTableViewCellViewModel.swift in Sources */,
+				6D35B2E11F5F31EB0013324E /* Accounts.swift in Sources */,
+				6D2E2A0F1F612ABB004B5BFC /* PR2Loopable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE78C9C1F6082460022D186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE78CC61F608CCC0022D186 /* PR2NetworkingExtensions.swift in Sources */,
+				6DE78CC41F608CC60022D186 /* PR2Dates.swift in Sources */,
+				6DE78CBC1F608A7C0022D186 /* AccountsInterfaceController.swift in Sources */,
+				6DE78CBE1F608CA00022D186 /* AccountContainer.swift in Sources */,
+				6DE78CBA1F6089CF0022D186 /* AccountsTableRowController.swift in Sources */,
+				6D2E2A111F612ABD004B5BFC /* PR2Loopable.swift in Sources */,
+				6DE78CC81F608CEB0022D186 /* Constants.swift in Sources */,
+				6DE78CC01F608CB70022D186 /* ConcurrentOperation.swift in Sources */,
+				6DE78CC11F608CB90022D186 /* NetworkOperation.swift in Sources */,
+				6DE78CC71F608CD30022D186 /* PRExtensions.swift in Sources */,
+				6DE78CC31F608CC30022D186 /* PR2Common.swift in Sources */,
+				6D1D45C91F608FF000DF5737 /* AccountTableViewCellViewModel.swift in Sources */,
+				6DE78CC21F608CC00022D186 /* NormalOperation.swift in Sources */,
+				6DE78CBD1F608C910022D186 /* AccountsViewModel.swift in Sources */,
+				6DE78CCA1F608CF20022D186 /* Styles.swift in Sources */,
+				6DE78CA81F6082460022D186 /* ExtensionDelegate.swift in Sources */,
+				6DE78CC51F608CC90022D186 /* PR2Networking.swift in Sources */,
+				6DE78CC91F608CEE0022D186 /* EndPoints.swift in Sources */,
+				6DE78CBF1F608CA30022D186 /* Accounts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF4A4F71F604B4D0015A477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF4A5101F604BA20015A477 /* Constants.swift in Sources */,
+				6DF4A5131F604BB60015A477 /* AccountContainer.swift in Sources */,
+				6DF4A5171F604BCE0015A477 /* NormalOperation.swift in Sources */,
+				6DF4A5151F604BC60015A477 /* ConcurrentOperation.swift in Sources */,
+				6DF4A51C1F604BDE0015A477 /* PRExtensions.swift in Sources */,
+				6DF4A51B1F604BDC0015A477 /* PR2NetworkingExtensions.swift in Sources */,
+				6DF4A5141F604BB90015A477 /* Accounts.swift in Sources */,
+				6DF4A5181F604BD10015A477 /* PR2Common.swift in Sources */,
+				6DF4A5121F604BA90015A477 /* Styles.swift in Sources */,
+				6DF4A50D1F604B960015A477 /* AccountTableViewCell.swift in Sources */,
+				6DF4A5191F604BD40015A477 /* PR2Dates.swift in Sources */,
+				6DF4A50C1F604B920015A477 /* AccountsViewModel.swift in Sources */,
+				6DF4A51A1F604BD80015A477 /* PR2Networking.swift in Sources */,
+				6DF4A50F1F604B9E0015A477 /* AccountTableViewCellViewModel.swift in Sources */,
+				6DE78C8B1F60524F0022D186 /* ReusableView.swift in Sources */,
+				6DF4A5111F604BA60015A477 /* EndPoints.swift in Sources */,
+				6DE78C8C1F6052520022D186 /* NibLoadableView.swift in Sources */,
+				6D2E2A101F612ABC004B5BFC /* PR2Loopable.swift in Sources */,
+				6DE78C8A1F6052410022D186 /* UITableViewExtension.swift in Sources */,
+				6DF4A5001F604B4D0015A477 /* TodayViewController.swift in Sources */,
+				6DF4A5161F604BC90015A477 /* NetworkOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D35B29E1F5EC1680013324E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D35B2871F5EC1670013324E /* INGAccounts */;
+			targetProxy = 6D35B29D1F5EC1680013324E /* PBXContainerItemProxy */;
+		};
+		6DE78CA31F6082460022D186 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DE78C9F1F6082460022D186 /* INGAccountWatchExtension */;
+			targetProxy = 6DE78CA21F6082460022D186 /* PBXContainerItemProxy */;
+		};
+		6DE78CAD1F6082460022D186 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DE78C931F6082460022D186 /* INGAccountWatch */;
+			targetProxy = 6DE78CAC1F6082460022D186 /* PBXContainerItemProxy */;
+		};
+		6DF4A5061F604B4D0015A477 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DF4A4FA1F604B4D0015A477 /* INGAccountsToday */;
+			targetProxy = 6DF4A5051F604B4D0015A477 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DE78C961F6082460022D186 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DE78C971F6082460022D186 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		6DF4A5011F604B4D0015A477 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DF4A5021F604B4D0015A477 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D35B2A31F5EC1680013324E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D35B2A41F5EC1680013324E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D35B2A61F5EC1680013324E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB91BCC508ED3B8FBC02B278 /* Pods-INGAccounts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KCE3C36M8;
+				INFOPLIST_FILE = "$(SRCROOT)/INGAccounts/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr2studio.INGAccounts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6D35B2A71F5EC1680013324E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FD2D16F65975571CD8681C8 /* Pods-INGAccounts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KCE3C36M8;
+				INFOPLIST_FILE = "$(SRCROOT)/INGAccounts/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr2studio.INGAccounts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6D35B2A91F5EC1680013324E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 564124FE2DAFF1529DE5E929 /* Pods-INGAccountsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2V49883M46;
+				INFOPLIST_FILE = INGAccountsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr2studio.INGAccountsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/INGAccounts.app/INGAccounts";
+			};
+			name = Debug;
+		};
+		6D35B2AA1F5EC1680013324E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79A5E959B2E0F8E33C0ED6A0 /* Pods-INGAccountsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2V49883M46;
+				INFOPLIST_FILE = INGAccountsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr2studio.INGAccountsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/INGAccounts.app/INGAccounts";
+			};
+			name = Release;
+		};
+		6DE78CAF1F6082460022D186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KCE3C36M8;
+				IBSC_MODULE = INGAccountWatch_Extension;
+				INFOPLIST_FILE = INGAccountWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr2studio.INGAccounts.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		6DE78CB01F6082460022D186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KCE3C36M8;
+				IBSC_MODULE = INGAccountWatch_Extension;
+				INFOPLIST_FILE = INGAccountWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr2studio.INGAccounts.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		6DE78CB11F6082460022D186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502C5819D8E89A6F222F8B8F /* Pods-INGAccountWatchExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2V49883M46;
+				INFOPLIST_FILE = "INGAccountWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr2studio.INGAccounts.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		6DE78CB21F6082460022D186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37187A9C604DBFE71FDC10A0 /* Pods-INGAccountWatchExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2V49883M46;
+				INFOPLIST_FILE = "INGAccountWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr2studio.INGAccounts.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		6DF4A5081F604B4D0015A477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02DCF699C37278795DDD41ED /* Pods-INGAccountsToday.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5KCE3C36M8;
+				INFOPLIST_FILE = INGAccountsToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr2studio.INGAccounts.INGAccountsToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6DF4A5091F604B4D0015A477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26127F7C488A0D107015498B /* Pods-INGAccountsToday.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5KCE3C36M8;
+				INFOPLIST_FILE = INGAccountsToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pr2studio.INGAccounts.INGAccountsToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D35B2831F5EC1670013324E /* Build configuration list for PBXProject "INGAccounts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D35B2A31F5EC1680013324E /* Debug */,
+				6D35B2A41F5EC1680013324E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D35B2A51F5EC1680013324E /* Build configuration list for PBXNativeTarget "INGAccounts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D35B2A61F5EC1680013324E /* Debug */,
+				6D35B2A71F5EC1680013324E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D35B2A81F5EC1680013324E /* Build configuration list for PBXNativeTarget "INGAccountsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D35B2A91F5EC1680013324E /* Debug */,
+				6D35B2AA1F5EC1680013324E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE78CB31F6082460022D186 /* Build configuration list for PBXNativeTarget "INGAccountWatchExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE78CB11F6082460022D186 /* Debug */,
+				6DE78CB21F6082460022D186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE78CB51F6082460022D186 /* Build configuration list for PBXNativeTarget "INGAccountWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE78CAF1F6082460022D186 /* Debug */,
+				6DE78CB01F6082460022D186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF4A50A1F604B4D0015A477 /* Build configuration list for PBXNativeTarget "INGAccountsToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF4A5081F604B4D0015A477 /* Debug */,
+				6DF4A5091F604B4D0015A477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D35B2801F5EC1670013324E /* Project object */;
+}

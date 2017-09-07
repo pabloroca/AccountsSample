@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7cA-wo-uXz">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--AccountsInterfaceController-->
+        <scene sceneID="wsG-46-LDG">
+            <objects>
+                <controller identifier="AccountsInterfaceController" hidesWhenLoading="NO" id="7cA-wo-uXz" customClass="AccountsInterfaceController" customModule="INGAccountWatchExtension">
+                    <items>
+                        <table alignment="left" id="OrH-uD-Xec">
+                            <items>
+                                <tableRow identifier="AccountsTableRowController" id="ENR-jR-tgm" customClass="AccountsTableRowController" customModule="INGAccountWatchExtension">
+                                    <group key="rootItem" width="1" alignment="left" id="55G-uX-Wrq">
+                                        <items>
+                                            <label width="71" alignment="left" verticalAlignment="center" text="Label" id="zKq-nn-CCu">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <label width="57" alignment="left" verticalAlignment="center" text="Label" textAlignment="right" id="WCy-Xg-MF4">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblAmount" destination="WCy-Xg-MF4" id="zAf-OV-8Ov"/>
+                                        <outlet property="lblTitle" destination="zKq-nn-CCu" id="5mj-fB-853"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="accountTable" destination="OrH-uD-Xec" id="nuB-fO-ds0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="51" y="38"/>
+        </scene>
+    </scenes>
+</document>

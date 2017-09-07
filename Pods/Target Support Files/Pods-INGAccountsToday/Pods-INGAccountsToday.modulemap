@@ -1,0 +1,6 @@
+framework module Pods_INGAccountsToday {
+  umbrella header "Pods-INGAccountsToday-umbrella.h"
+
+  export *
+  module * { export * }
+}
