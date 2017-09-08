@@ -31,26 +31,57 @@ public class AccountsViewModel {
     func numberOfRowsInSection(section: Int) -> Int {
         return rows.count
     }
-
+    
     func numberOfRows() -> Int {
         return rows.count
     }
-
+    
+    // makes two network requests in parallels (concurrently)
     func readData(completion: @escaping (Bool) -> Void)  {
-//        let jsonData = PR2Common().readJSONFileAsDict(file: "accounts")
-//        let accountContainer = AccountContainer(json: jsonData)
-//        let accounts = accountContainer.accounts.filter { (account) -> Bool in
-//            if (showOnlyVisibleAccounts && account.isVisible) || !showOnlyVisibleAccounts {
-//                return true
-//            } else {
-//                return false
-//            }
-//        }
-//        
-//        rows = accounts
-//        completion(true)
+        let groupAccounts = DispatchGroup()
         
-        let request = PR2NetworkTask(method: "GET", url: EndPoints.accounts, params: nil, headers: nil, priority: Operation.QueuePriority.normal, pollforUTC: 0) { [unowned self] (success, response) in
+        groupAccounts.enter()
+        let requestStatus = PR2NetworkTask(method: "GET", url: EndPoints.status, params: nil, headers: nil, priority: Operation.QueuePriority.normal, pollforUTC: 0) { (success, response) in
+            // we do nothing here, its just for demo purposes
+            groupAccounts.leave()
+        }
+
+        groupAccounts.enter()
+        let requestAccounts = PR2NetworkTask(method: "GET", url: EndPoints.accounts, params: nil, headers: nil, priority: Operation.QueuePriority.normal, pollforUTC: 0) { [unowned self] (success, response) in
+            
+            if let result = response.result.value {
+                let json = result as! [String: Any]
+                let accountContainer = AccountContainer(json: json)
+                
+                let accounts = accountContainer.accounts.filter { (account) -> Bool in
+                    if (self.showOnlyVisibleAccounts && account.isVisible) || !self.showOnlyVisibleAccounts {
+                        return true
+                    } else {
+                        return false
+                    }
+                }
+                
+                self.rows = accounts
+                groupAccounts.leave()
+            }
+        }
+        
+        groupAccounts.notify(queue: .main) {
+            completion(true)
+        }
+        
+        PR2Networking.sharedInstance.addTask(requestStatus)
+        PR2Networking.sharedInstance.addTask(requestAccounts)
+    }
+    
+    // makes two network requests serial requestAccounts waits to requestStatus finish
+    func readDataWithDependency(completion: @escaping (Bool) -> Void)  {
+        
+        let requestStatus = PR2NetworkTask(method: "GET", url: EndPoints.status, params: nil, headers: nil, priority: Operation.QueuePriority.normal, pollforUTC: 0) { (success, response) in
+            // we do nothing here, its just for demo purposes
+        }
+        
+        let requestAccounts = PR2NetworkTask(method: "GET", url: EndPoints.accounts, params: nil, headers: nil, priority: Operation.QueuePriority.normal, pollforUTC: 0) { [unowned self] (success, response) in
             
             if let result = response.result.value {
                 let json = result as! [String: Any]
@@ -66,11 +97,13 @@ public class AccountsViewModel {
                 
                 self.rows = accounts
                 completion(true)
-                
             }
         }
         
-        PR2Networking.sharedInstance.addTask(request)
+        requestAccounts.addDependency(requestStatus)
+
+        PR2Networking.sharedInstance.addTask(requestStatus)
+        PR2Networking.sharedInstance.addTask(requestAccounts)
     }
     
     func row(at indexpath: IndexPath) -> AccountTableViewCellViewModel {

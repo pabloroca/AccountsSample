@@ -19,5 +19,8 @@ struct EndPoints {
     
     /// EP for accounts
     static let accounts = "\(mainurl)accounts-json"
-    
+
+    /// EP for dummy (just a second ep to be able to group then)
+    static let status = "\(mainurl)status-json"
+
 }
