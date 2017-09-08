@@ -43,6 +43,10 @@
 		6D35B2F61F5F6CD10013324E /* AccountsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2F51F5F6CD10013324E /* AccountsViewModelTests.swift */; };
 		6D35B2FF1F5F75F00013324E /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2FE1F5F75F00013324E /* UITableViewExtension.swift */; };
 		6D35B3011F5F76870013324E /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B3001F5F76870013324E /* ReusableView.swift */; };
+		6D6C8EE71F62E6BE00239487 /* AccountsViewModelMocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C8EE61F62E6BE00239487 /* AccountsViewModelMocked.swift */; };
+		6D6C8EE81F62E6BE00239487 /* AccountsViewModelMocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C8EE61F62E6BE00239487 /* AccountsViewModelMocked.swift */; };
+		6D6C8EE91F62E6BE00239487 /* AccountsViewModelMocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C8EE61F62E6BE00239487 /* AccountsViewModelMocked.swift */; };
+		6D6C8EEA1F62E6BE00239487 /* AccountsViewModelMocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C8EE61F62E6BE00239487 /* AccountsViewModelMocked.swift */; };
 		6D855CFD1F5FD11500456059 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855CFC1F5FD11500456059 /* NibLoadableView.swift */; };
 		6D855D061F6025AE00456059 /* PR2Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D051F6025AE00456059 /* PR2Networking.swift */; };
 		6D855D091F6025B500456059 /* PR2NetworkingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D071F6025B500456059 /* PR2NetworkingExtensions.swift */; };
@@ -64,6 +68,10 @@
 		6D855D231F60333C00456059 /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0B1F6025CC00456059 /* ConcurrentOperation.swift */; };
 		6D855D241F6033FE00456059 /* PR2Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855D0F1F60262500456059 /* PR2Dates.swift */; };
 		6D855D251F60341700456059 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2B01F5EC33F0013324E /* Styles.swift */; };
+		6DB264961F62C869006360C3 /* PR2ModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB264951F62C869006360C3 /* PR2ModelList.swift */; };
+		6DB264971F62C9CB006360C3 /* PR2ModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB264951F62C869006360C3 /* PR2ModelList.swift */; };
+		6DB264981F62C9CB006360C3 /* PR2ModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB264951F62C869006360C3 /* PR2ModelList.swift */; };
+		6DB264991F62C9CD006360C3 /* PR2ModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB264951F62C869006360C3 /* PR2ModelList.swift */; };
 		6DE78C8A1F6052410022D186 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B2FE1F5F75F00013324E /* UITableViewExtension.swift */; };
 		6DE78C8B1F60524F0022D186 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D35B3001F5F76870013324E /* ReusableView.swift */; };
 		6DE78C8C1F6052520022D186 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D855CFC1F5FD11500456059 /* NibLoadableView.swift */; };
@@ -217,6 +225,7 @@
 		6D35B2F51F5F6CD10013324E /* AccountsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewModelTests.swift; sourceTree = "<group>"; };
 		6D35B2FE1F5F75F00013324E /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		6D35B3001F5F76870013324E /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		6D6C8EE61F62E6BE00239487 /* AccountsViewModelMocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewModelMocked.swift; sourceTree = "<group>"; };
 		6D855CFC1F5FD11500456059 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		6D855D051F6025AE00456059 /* PR2Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PR2Networking.swift; sourceTree = "<group>"; };
 		6D855D071F6025B500456059 /* PR2NetworkingExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PR2NetworkingExtensions.swift; sourceTree = "<group>"; };
@@ -230,6 +239,7 @@
 		6D855D151F6031AB00456059 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		6D855D161F6031AB00456059 /* AccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
 		6D855D171F6031AB00456059 /* AccountTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		6DB264951F62C869006360C3 /* PR2ModelList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PR2ModelList.swift; sourceTree = "<group>"; };
 		6DE78C941F6082460022D186 /* INGAccountWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INGAccountWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE78C971F6082460022D186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		6DE78C991F6082460022D186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -436,6 +446,7 @@
 				6D35B2D41F5F12020013324E /* PRExtensions.swift */,
 				6D35B3001F5F76870013324E /* ReusableView.swift */,
 				6D35B2FE1F5F75F00013324E /* UITableViewExtension.swift */,
+				6DB264951F62C869006360C3 /* PR2ModelList.swift */,
 			);
 			path = PR2Studio;
 			sourceTree = "<group>";
@@ -463,6 +474,7 @@
 				6D855D121F6031AB00456059 /* AccountsViewController.swift */,
 				6D855D131F6031AB00456059 /* AccountsViewController.xib */,
 				6D855D141F6031AB00456059 /* AccountsViewModel.swift */,
+				6D6C8EE61F62E6BE00239487 /* AccountsViewModelMocked.swift */,
 				6D855D151F6031AB00456059 /* AccountTableViewCell.swift */,
 				6D855D161F6031AB00456059 /* AccountTableViewCell.xib */,
 				6D855D171F6031AB00456059 /* AccountTableViewCellViewModel.swift */,
@@ -941,6 +953,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D35B2D51F5F12020013324E /* PR2Common.swift in Sources */,
+				6DB264961F62C869006360C3 /* PR2ModelList.swift in Sources */,
 				6D855D0E1F6025CC00456059 /* NormalOperation.swift in Sources */,
 				6D855D181F6031AB00456059 /* AccountsViewController.swift in Sources */,
 				6D35B2D71F5F12020013324E /* PRExtensions.swift in Sources */,
@@ -956,6 +969,7 @@
 				6D855D091F6025B500456059 /* PR2NetworkingExtensions.swift in Sources */,
 				6D2E2A0E1F612A55004B5BFC /* PR2Loopable.swift in Sources */,
 				6D35B2FF1F5F75F00013324E /* UITableViewExtension.swift in Sources */,
+				6D6C8EE71F62E6BE00239487 /* AccountsViewModelMocked.swift in Sources */,
 				6D855D0A1F6025B500456059 /* NetworkOperation.swift in Sources */,
 				6D35B2E41F5F41050013324E /* AppCoordinator.swift in Sources */,
 				6D35B2B11F5EC33F0013324E /* Styles.swift in Sources */,
@@ -983,8 +997,10 @@
 				6D855D201F60330F00456059 /* EndPoints.swift in Sources */,
 				6D35B2DE1F5F1A530013324E /* PRExtensions.swift in Sources */,
 				6D855D1E1F60325700456059 /* AccountsViewModel.swift in Sources */,
+				6D6C8EE81F62E6BE00239487 /* AccountsViewModelMocked.swift in Sources */,
 				6D855D221F60332D00456059 /* AccountTableViewCellViewModel.swift in Sources */,
 				6D35B2E11F5F31EB0013324E /* Accounts.swift in Sources */,
+				6DB264971F62C9CB006360C3 /* PR2ModelList.swift in Sources */,
 				6D2E2A0F1F612ABB004B5BFC /* PR2Loopable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -999,6 +1015,7 @@
 				6DE78CBE1F608CA00022D186 /* AccountContainer.swift in Sources */,
 				6DE78CBA1F6089CF0022D186 /* AccountsTableRowController.swift in Sources */,
 				6D2E2A111F612ABD004B5BFC /* PR2Loopable.swift in Sources */,
+				6DB264991F62C9CD006360C3 /* PR2ModelList.swift in Sources */,
 				6DE78CC81F608CEB0022D186 /* Constants.swift in Sources */,
 				6DE78CC01F608CB70022D186 /* ConcurrentOperation.swift in Sources */,
 				6DE78CC11F608CB90022D186 /* NetworkOperation.swift in Sources */,
@@ -1010,6 +1027,7 @@
 				6DE78CCA1F608CF20022D186 /* Styles.swift in Sources */,
 				6DE78CA81F6082460022D186 /* ExtensionDelegate.swift in Sources */,
 				6DE78CC51F608CC90022D186 /* PR2Networking.swift in Sources */,
+				6D6C8EEA1F62E6BE00239487 /* AccountsViewModelMocked.swift in Sources */,
 				6DE78CC91F608CEE0022D186 /* EndPoints.swift in Sources */,
 				6DE78CBF1F608CA30022D186 /* Accounts.swift in Sources */,
 			);
@@ -1019,6 +1037,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB264981F62C9CB006360C3 /* PR2ModelList.swift in Sources */,
 				6DF4A5101F604BA20015A477 /* Constants.swift in Sources */,
 				6DF4A5131F604BB60015A477 /* AccountContainer.swift in Sources */,
 				6DF4A5171F604BCE0015A477 /* NormalOperation.swift in Sources */,
@@ -1035,6 +1054,7 @@
 				6DF4A50F1F604B9E0015A477 /* AccountTableViewCellViewModel.swift in Sources */,
 				6DE78C8B1F60524F0022D186 /* ReusableView.swift in Sources */,
 				6DF4A5111F604BA60015A477 /* EndPoints.swift in Sources */,
+				6D6C8EE91F62E6BE00239487 /* AccountsViewModelMocked.swift in Sources */,
 				6DE78C8C1F6052520022D186 /* NibLoadableView.swift in Sources */,
 				6D2E2A101F612ABC004B5BFC /* PR2Loopable.swift in Sources */,
 				6DE78C8A1F6052410022D186 /* UITableViewExtension.swift in Sources */,

@@ -8,9 +8,8 @@
 
 import UIKit
 
-public class AccountsViewModel {
+public class AccountsViewModel: PR2ModelList<Account> {
     
-    var rows: [Account] = []
     var showOnlyVisibleAccounts: Bool = true
     
     static let formatter: NumberFormatter = {
@@ -22,22 +21,12 @@ public class AccountsViewModel {
         return _formatter
     }()
     
-    init() {}
-    
     func changeshowOnlyVisibleAccounts() {
         showOnlyVisibleAccounts = !showOnlyVisibleAccounts
     }
     
-    func numberOfRowsInSection(section: Int) -> Int {
-        return rows.count
-    }
-    
-    func numberOfRows() -> Int {
-        return rows.count
-    }
-    
     // makes two network requests in parallels (concurrently)
-    func readData(completion: @escaping (Bool) -> Void)  {
+    override func readData(completion: @escaping (Bool) -> Void)  {
         let groupAccounts = DispatchGroup()
         
         groupAccounts.enter()

@@ -25,7 +25,7 @@ enum AccountType {
     }
 }
 
-struct Account: Loopable {
+public struct Account: Loopable {
     var accountBalanceInCents: Double
     var accountCurrency: String
     var accountId: Double

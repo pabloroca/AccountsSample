@@ -20,7 +20,13 @@ final class AccountsCoordinator: Coordinator {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        let viewModel = AccountsViewModel()
+        
+        #if MockEnvironment
+            let viewModel = AccountsViewModelMocked()
+        #else
+            let viewModel = AccountsViewModel()
+        #endif
+        
         self.accountsViewController = AccountsViewController(viewModel: viewModel)
     }
     

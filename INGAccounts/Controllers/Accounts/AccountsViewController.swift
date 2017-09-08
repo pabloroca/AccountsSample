@@ -11,7 +11,6 @@ import UIKit
 class AccountsViewController: UIViewController {
     
     //MARK: - Properties
-    
     var viewModel: AccountsViewModel!
     
     //MARK: - Views

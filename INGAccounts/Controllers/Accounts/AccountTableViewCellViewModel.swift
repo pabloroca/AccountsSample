@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AccountTableViewCellViewModel {
+public struct AccountTableViewCellViewModel {
     var title: String
     var subtitle: String
     var amount: NSAttributedString
