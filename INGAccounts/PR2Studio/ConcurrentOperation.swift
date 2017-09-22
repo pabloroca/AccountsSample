@@ -42,7 +42,7 @@ class ConcurrentOperation : Operation {
       }
    }
    
-   fileprivate var _finished: Bool = false;
+   fileprivate var _finished: Bool = false
    override var isFinished: Bool {
       get {
          return _finished

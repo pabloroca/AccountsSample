@@ -54,3 +54,20 @@ extension OperationQueue {
         self.addOperation(operation)
     }
 }
+
+extension Double {
+    func toPriceString(decimalDigits: Int, currencySymbol: String, thousandsSeparator: String, decimalSeparator: String, symbolOnLeft: Bool = true, spaceBetweenAmountAndSymbol: Bool = false) -> String {
+        
+        let numformat: NumberFormatter = NumberFormatter()
+        numformat.numberStyle = .decimal
+        numformat.alwaysShowsDecimalSeparator = false
+        numformat.decimalSeparator = decimalSeparator
+        numformat.minimumFractionDigits = 0
+        numformat.maximumFractionDigits = decimalDigits
+        
+        let spacing = spaceBetweenAmountAndSymbol ? " " : ""
+        let number = NSNumber(value: self)
+        let numberFormatted = numformat.string(from: number) ?? ""
+        return symbolOnLeft ? currencySymbol+spacing+numberFormatted : numberFormatted+spacing+currencySymbol
+    }
+}

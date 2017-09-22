@@ -34,6 +34,14 @@ extension String {
         return substring(with: startIndex..<endIndex)
     }
     
+    // generate DJB hash
+    var djb2hash: Int {
+        let unicodeScalars = self.unicodeScalars.map { $0.value }
+        return unicodeScalars.reduce(5381) {
+            ($0 << 5) &+ $0 &+ Int($1)
+        }
+    }
+    
     func asIban() -> String {
         let paddedString = self.padding(toLength: 32, withPad: " ", startingAt: 0)
         
@@ -136,6 +144,10 @@ public class PR2Common {
         }
     }
     
+    func minutesToHoursMinutes (minutes: Int) -> (Int, Int) {
+        return (minutes / 60, (minutes % 60))
+    }
+    
     public func canDevicePlaceAPhoneCall() -> Bool {
         #if UIApplication
             if UIApplication.shared.canOpenURL(NSURL(string: "tel://")! as URL) {
@@ -201,9 +213,15 @@ public class PR2Common {
         return documentsFolderPath
     }
     
-    // File in Documents directory
-    public func fileInDocumentsDirectory(filename: String) -> String {
-        return documentsDirectory().stringByAppendingPathComponent(path: filename)
+    // get next day of week
+    // parameters dayofweek - which day we want 1=Sunday, 2=Monday ...
+    func nextDayofWeek(dayofweek: Int) -> Date {
+        let now = Date()
+        let calendar = Calendar.current
+        let weekdayToday = calendar.component(.weekday, from: now)
+        var daysToDayofWeek = (7 + dayofweek - weekdayToday) % 7
+        daysToDayofWeek = (daysToDayofWeek == 0) ? 7 : daysToDayofWeek
+        return Calendar.current.date(byAdding: .day, value: daysToDayofWeek, to: now)!
     }
     
     // MARK: - Regex
@@ -234,7 +252,7 @@ public class PR2Common {
         do {
             let regex = try NSRegularExpression(pattern: regex, options: [])
             let nsString = text as NSString
-            let results = regex.matches(in: text, options: [], range: NSMakeRange(0, nsString.length))
+            let results = regex.matches(in: text, options: [], range: NSRange(location: 0, length: nsString.length))
             return results.map { nsString.substring(with: $0.range)}
         } catch _ as NSError {
             //      print("invalid regex: \(error.localizedDescription)")

@@ -17,6 +17,19 @@ extension String {
     func PR2DateFormatterFromAPI() -> Date {
         return DateFormatter.PR2DateFormatterFromAPI.date(from: self)!
     }
+    
+    func PR2DateFormatterFromAPIT() -> Date {
+        return DateFormatter.PR2DateFormatterFromAPIT.date(from: self)!
+    }
+
+    func PR2DateFormatterYYYYMMDD() -> Date {
+        return DateFormatter.PR2DateFormatterYYYYMMDD.date(from: self)!
+    }
+
+    func PR2DateFormatterForHeader() -> Date {
+        return DateFormatter.PR2DateFormatterForHeader.date(from: self)!
+    }
+    
 }
 
 extension Date {
@@ -24,6 +37,11 @@ extension Date {
     // Date format for API
     func PR2DateFormatterFromAPI() -> String {
         return DateFormatter.PR2DateFormatterFromAPI.string(from: self)
+    }
+
+    // Date format for APIT
+    func PR2DateFormatterFromAPIT() -> String {
+        return DateFormatter.PR2DateFormatterFromAPIT.string(from: self)
     }
 
     // Date format for Logs
@@ -41,6 +59,16 @@ extension Date {
       return DateFormatter.PR2DateFormatterHHMM.string(from: self)
    }
 
+    // Date in YYYY-MM-DD
+    func PR2DateFormatterYYYYMMDD() -> String {
+        return DateFormatter.PR2DateFormatterYYYYMMDD.string(from: self)
+    }
+
+    // Date in MMM dd., EEE
+    func PR2DateFormatterForHeader() -> String {
+        return DateFormatter.PR2DateFormatterForHeader.string(from: self)
+    }
+    
 }
 
 extension DateFormatter {
@@ -57,6 +85,13 @@ extension DateFormatter {
         return formatter
     }()
 
+    fileprivate static let PR2DateFormatterFromAPIT: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        formatter.timeZone = TimeZone(identifier:"UTC")
+        return formatter
+    }()
+    
     fileprivate static let PR2DateFormatterForLog: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
@@ -77,4 +112,15 @@ extension DateFormatter {
       return formatter
    }()
 
+    fileprivate static let PR2DateFormatterYYYYMMDD: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
+
+    fileprivate static let PR2DateFormatterForHeader: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd., EEE"
+        return formatter
+    }()
 }
