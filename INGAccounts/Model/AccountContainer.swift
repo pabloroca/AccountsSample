@@ -2,7 +2,7 @@
 //  AccountContainer.swift
 //  INGAccounts
 //
-//  Created by Pablo Roca Rozas on 5/9/17.
+//  Created by Pablo Roca Rozas on 21/9/17.
 //  Copyright © 2017 PR2Studio. All rights reserved.
 //
 
