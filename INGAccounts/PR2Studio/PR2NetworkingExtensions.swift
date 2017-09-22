@@ -27,11 +27,13 @@ class PR2NetworkTask: ConcurrentOperation {
     
     let networkOperationCompletionHandler: (_ success: Bool, _ response: DataResponse<Any>) -> ()
     
-    init(method: String = "GET", url: String, params: [String:String]? = nil, headers: [String:String]? = nil, priority: Operation.QueuePriority = Operation.QueuePriority.normal, pollforUTC: Double = 0, networkOperationCompletionHandler: @escaping (_ success: Bool, _ response: DataResponse<Any>) -> ()) {
+    init(method: String = "GET", url: String, params: [String:AnyObject]? = nil, headers: [String:String]? = nil, priority: Operation.QueuePriority = Operation.QueuePriority.normal, pollforUTC: Double = 0, networkOperationCompletionHandler: @escaping (_ success: Bool, _ response: DataResponse<Any>) -> ()) {
         
         self.id = UUID().uuidString
         self.method = HTTPMethod(rawValue: method)!
         self.url = url
+        self.params = params
+        self.headers = headers
         self.status = PR2NetworkTaskStatus.statusPendingToStart
         self.accDelay = 0.0
         self.pollforUTC = pollforUTC
@@ -79,5 +81,3 @@ class PR2NetworkTask: ConcurrentOperation {
     }
     
 }
-
-

@@ -16,7 +16,7 @@ public protocol Loopable: CustomStringConvertible {
     ///
     /// - Returns: dictionary of properties
     /// - Throws: when object is not a class or struct
-    func allProperties() throws -> [String: Any]
+    func allProperties() throws -> [String: AnyObject]
 }
 
 // Extension for Loopable
@@ -26,8 +26,8 @@ extension Loopable {
     ///
     /// - Returns: dictionary of properties
     /// - Throws: when object is not a class or struct
-    public func allProperties() throws -> [String: Any] {
-        var result: [String: Any] = [:]
+    public func allProperties() throws -> [String: AnyObject] {
+        var result: [String: AnyObject] = [:]
         let selfMirror = Mirror(reflecting: self)
         
         // Optional check to make sure we're iterating over a struct or class
@@ -39,7 +39,18 @@ extension Loopable {
             guard let property = property else {
                 continue
             }
-            result[property] = value
+            result[property] = value as AnyObject
+        }
+        return result
+    }
+    
+    public func retrieveInputDictionary() -> [String : AnyObject] {
+        var result: [String: AnyObject] = [String: AnyObject]()
+        
+        do {
+            result = try allProperties()
+        } catch _ {
+            result = [:]
         }
         return result
     }

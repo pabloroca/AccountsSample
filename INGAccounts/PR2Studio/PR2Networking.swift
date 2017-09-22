@@ -21,27 +21,64 @@ public enum PR2NetworkingLogLevel {
 }
 
 /// HTTP error codes
-struct PR2HTTPCode {
+public enum PR2HTTPCode {
     // Success
     /// HTTP 200 OK
-    static let c200OK = 200
+    case c200OK
+    
+    /// HTTP 201 Created
+    case c201OK
     
     /// HTTP Error 304 Redirection
-    static let c304NotModified = 304
+    case c304NotModified
     
     // Client error
     /// HTTP Error 400 Bad request
-    static let c400BadRequest = 400
+    case c400BadRequest
     /// HTTP Error 401 Unauthorised
-    static let c401Unauthorised = 401
+    case c401Unauthorised
+    /// HTTP Error 403 Forbidden
+    case c403Forbidden
     /// HTTP Error 404 Not found
-    static let c404NotFound = 404
+    case c404NotFound
     /// HTTP Error 405 Method not allowed
-    static let c405MethodNotAllowed = 405
+    case c405MethodNotAllowed
+    /// HTTP Error 410 Gone
+    case c410Gone
+    /// HTTP Error 429 Too Many Requests
+    case c429TooManyRequests
     
     // Server error
     /// HTTP Error 500 Internsal server error
-    static let c500InternalServerError = 500
+    case c500InternalServerError
+    case other
+    
+    init(value: Int) {
+        switch value {
+        case 200:
+            self = .c200OK
+        case 201:
+            self = .c201OK
+        case 304:
+            self = .c304NotModified
+        case 400:
+            self = .c400BadRequest
+        case 401:
+            self = .c401Unauthorised
+        case 403:
+            self = .c403Forbidden
+        case 404:
+            self = .c404NotFound
+        case 405:
+            self = .c405MethodNotAllowed
+        case 410:
+            self = .c410Gone
+        case 500:
+            self = .c500InternalServerError
+        default:
+            self = .other
+        }
+    }
 }
 
 /// Slow Internet Notification
@@ -99,19 +136,6 @@ open class PR2Networking {
         
     }
     
-    //   public struct PR2NetworkTask {
-    //      var id: String
-    //      var method: String
-    //      var url: String
-    //      var params: [String:String]
-    //      var headers: [String:String]
-    //      var priority: Int
-    //      var status: Int
-    //      var accDelay: Int
-    //      var pollforUTC: Double
-    //   }
-    
-    
     func addTask(_ task: PR2NetworkTask) {
         let mytask = task
         mytask.status = PR2NetworkTaskStatus.statusRunning
@@ -156,19 +180,23 @@ open class PR2Networking {
         Alamofire.request(urlString, method: method, parameters: parameters, encoding: encoding, headers: headers)
             .responseJSON { [weak self] response in
                 guard let strongSelf = self else { return }
-                var statusCode: Int = 0
+                var statusCode: PR2HTTPCode
                 if let httpError = response.result.error {
-                    statusCode = httpError._code
+                    statusCode = PR2HTTPCode(value: httpError._code)
                 } else { //no errors
-                    statusCode = (response.response?.statusCode)!
+                    statusCode = PR2HTTPCode(value: (response.response?.statusCode)!)
                 }
+                
                 //                let cachedURLResponse = NSCachedURLResponse(response: response.response!, data: response.data!, userInfo: nil, storagePolicy: .Allowed)
                 //                NSURLCache.sharedURLCache().storeCachedResponse(cachedURLResponse, forRequest: response.request!)
                 
                 // success
-                if (response.result.error == nil && statusCode == PR2HTTPCode.c200OK) {
+                if (response.result.error == nil && (statusCode == PR2HTTPCode.c200OK || statusCode == PR2HTTPCode.c201OK)) {
                     strongSelf.didFinishRequest(true, response)
                     completionHandler(true, response)
+                } else if (statusCode == PR2HTTPCode.c403Forbidden || statusCode == PR2HTTPCode.c410Gone || statusCode == PR2HTTPCode.c429TooManyRequests) {
+                    strongSelf.didFinishRequest(false, response)
+                    completionHandler(false, response)
                 } else {
                     // don't repeat the network call if error not temporary
                     let error = response.result.error as! AFError
